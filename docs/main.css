@@ -1,0 +1,63 @@
+/* Andy Tang */
+/* 09/12/2019 */
+/* Exercise 6: Divs and CSS */
+body {
+    /* Line spacing of 1.5 */
+    line-height: 1.5;
+    /* CC0 image uploaded onto imgur, original source from Pixabay */
+    background-image: url("https://i.imgur.com/605tJ0Nm.jpg");
+    /* Colored variables defined */
+    --goalcolor: #C52333;
+    --offwhite: #E0E0E0;
+    --charcoal: #36454F;
+    --lightred: #DBBDC0;
+    --birch: #F8DFA1;
+    --lavender: #967BB6;
+    text-align: justify;
+}
+
+div {
+    margin: 20px;
+    padding: 10px;
+}
+
+blockquote {
+    border-radius: 10px 0 10px 0;
+    background: linear-gradient(30deg, var(--offwhite), var(--lavender) 50%);
+    padding: 10px;
+}
+
+.author {
+    color: var(--birch);
+    text-align: right;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    /* Assign overall values. Have a box-shadow transition */
+    background: linear-gradient(30deg, #F0F0F0B0, #B0C4DEB0);
+    margin: 40px;
+
+    box-shadow: 10px 10px 3px -3px rgba(0,0,0,0.75);
+    font-family: Karla, Helvetica, sans-serif;
+    transition: box-shadow 1s;
+    color: var(--charcoal);
+}
+
+.container:hover {
+    /* Have a box-shadow transition on hover */
+    box-shadow: 20px 20px 5px -5px rgba(0,0,0,0.75);
+    transition: box-shadow 1s;
+}
+
+h1, h3 {
+    font-family: Lato, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
